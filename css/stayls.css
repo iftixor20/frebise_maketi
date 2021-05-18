@@ -1,0 +1,256 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('../font/Raleway-Regular.woff2') format('woff2'),
+      url('../font/Raleway-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../font/Raleway-Medium.woff2') format('woff2'),
+      url('../font/Raleway-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../font/Raleway-Black.woff2') format('woff2'),
+      url('../font/Raleway-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../font/Raleway-Light.woff2') format('woff2'),
+      url('../font/Raleway-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+:root{
+  --side-fonts: 'Raleway', 'Arial', sans-serif;
+  --input-radius: 3px;
+  --line-height: 9px;
+  --font-size: 7px;
+  --bdrs: 50%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+
+  max-width: 720px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-container{
+  display: flex;
+  background-color: #f2f2f2;
+}
+
+.left-box {
+  background-color: #ffd500;
+  width: 276px;
+  border-radius: 21.25px 0px 0px 21.25px;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+
+.left-h2 {
+  font-family: var(--side-fonts);
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #383838;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.left-h2::before {
+  display: block;
+  background-image: url(../img/ayol.png.png);
+  width: 120px;
+  height: 120px;
+  padding-top: 80px;
+  margin-left: 78px;
+
+  margin-bottom: 57px;
+  content: "";
+}
+
+
+.left-p {
+  font-family: var(--side-fonts);
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 14px;
+  text-align: center;
+  color: #383838;
+  padding: 0;
+  margin: 0;
+}
+
+.left-p::after{
+  display: block;
+  background-color: #383838;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--bdrs);
+  background-image: url(../img/strelka.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-left: 122px;
+  margin-top: 38px;
+
+  content: "";
+}
+
+
+.right-box {
+  background: #fff;
+  border-radius: 0 21.25px 21.25px 0;
+}
+
+.main-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 71px;
+  margin-top: 53px;
+  margin-right: 74px;
+}
+
+.main-label {
+  font-family: var(--side-fonts);
+  font-weight: normal;
+  font-size: 7.4089px;
+  line-height: 9px;
+  display: flex;
+  align-items: flex-end;
+  align-items: center;
+  color: #373d40;
+  margin-bottom: 11px;
+
+}
+
+.wit{
+  width: 50px;
+
+}
+
+
+.legend-box{
+  font-family: var(--side-fonts);
+  font-weight: normal;
+  font-size: 7.4089px;
+  line-height: 9px;
+  color: #373d40;
+  display: flex;
+  margin-bottom: 11px;
+}
+
+.pad-box{
+  margin-top: 32px;
+}
+
+.main-label2{
+  font-family: var(--side-fonts);
+  font-weight: normal;
+  font-size: 7.4089px;
+  line-height: 9px;
+  display: flex;
+  align-items: flex-end;
+  align-items: center;
+  color: #373d40;
+  margin-left: 11px;
+  width: 40px;
+}
+
+.lab{
+  display: flex;
+  align-items: center;
+
+}
+
+.radio-input1{
+  width: 26px;
+  height: 26px;
+}
+
+.color{
+  color: #B1BFCD;
+}
+
+.boxing{
+  background: #F5F8F9;
+  border-radius: 2.64604px;
+  border: inherit;
+  width: 210px;
+  padding: 9px 10px;
+}
+
+.button-box{
+  display: flex;
+  margin-top: 41px;
+}
+
+.left-button {
+  background: #F5F8F9;
+  border-radius: 2.64604px;
+  border: inherit;
+
+  padding: 9px 25px;
+  margin-left: 78px;
+  margin-right: 10px;
+  font-family: var(--side-fonts);
+  font-weight: normal;
+  font-size: 7.4089px;
+  line-height: 9px;
+  color: #373D40;
+
+}
+
+.right-button {
+  background: #60E6C5;
+  border-radius: 2.64604px;
+  border: inherit;
+  padding: 9px 30px;
+  font-family: var(--side-fonts);
+  font-weight: normal;
+  font-size: 7.4089px;
+  line-height: 9px;
+  color: #fff;
+}
